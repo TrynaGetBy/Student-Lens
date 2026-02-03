@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Student Lens</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="dark">
+
+<header>
+  <h1 class="logo">The Student Lens</h1>
+
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('articles')">Articles</button>
+    <button onclick="showPage('create')">Create</button>
+    <button onclick="showPage('news')">News</button>
+    <button onclick="showPage('about')">About Us</button>
+  </nav>
+
+  <button id="themeToggle">🌙 / ☀️</button>
+</header>
+
+<main>
+  <section id="home" class="page active">
+    <h2>Welcome</h2>
+    <p>Discover and discuss education issues worldwide.</p>
+    <div id="homeArticles"></div>
+  </section>
+
+  <section id="articles" class="page">
+    <h2>All Articles</h2>
+    <div id="allArticles"></div>
+  </section>
+
+  <section id="create" class="page">
+    <h2>Create New Article</h2>
+
+    <input id="titleInput" placeholder="Article title">
+    <textarea id="contentInput" placeholder="Write your article here..."></textarea>
+    <input id="imageInput" placeholder="Image URL (optional)">
+
+    <button onclick="createArticle()">Publish</button>
+
+    <h3>Your Articles</h3>
+    <div id="userArticles"></div>
+  </section>
+
+  <section id="news" class="page">
+    <h2>Education Inequality Facts</h2>
+    <ul>
+      <li>Over 250 million children lack access to education worldwide.</li>
+      <li>Girls are disproportionately affected in deprived regions.</li>
+      <li>Many schools in Africa lack electricity and clean water.</li>
+      <li>Conflict zones heavily disrupt education systems.</li>
+      <li>Digital access remains unequal across continents.</li>
+    </ul>
+  </section>
+
+  <section id="about" class="page">
+    <h2>Contact Us</h2>
+    <p><strong>Name:</strong> PrimeMinister</p>
+    <p><strong>Email:</strong> daniyalharoon28@gmail.com</p>
+    <p><strong>Phone:</strong> 07407362261</p>
+  </section>
+</main>
+
+</body>
+</html>
